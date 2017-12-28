@@ -1,0 +1,8 @@
+.DS_Store
+node_modules
+scrapper/node_modules
+*.zip
+taskrunner2.sh
+video
+audio
+result
