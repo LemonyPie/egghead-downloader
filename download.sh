@@ -5,6 +5,7 @@ echo -e '\033[37;1;41m starting download \033[0m'
 link=$1
 name=${link#*//*/}
 name=${name%-*}
+plist_item=$3
 
 mkdir "audio"
 mkdir "video"
@@ -23,7 +24,7 @@ while :
 done
 
 echo -e "\033[37;1;41m sending $name for process of $i segments \033[0m"
-. concat.sh $i $name $2
+. concat.sh $i $name $2 $plist_item
 
 
 echo -e '\033[37;1;41m purging \033[0m'

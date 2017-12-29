@@ -1,5 +1,5 @@
 #!/bin/bash
-
+plist_item=$4
 echo -e "\033[37;1;41m concating video \033[0m"
 cd video/
 cat init.mp4 > video.mp4
@@ -21,15 +21,15 @@ for ((j = 0; j <= $1; j++))
 cd ..
 echo -e '\033[37;1;41m merging audio and video \033[0m'
 
-if ! [ -d "result/$2" ]; then
-  mkdir "result/$2"
-  chmod a+w "result/$2"
+if ! [ -d "result/$plist_item" ]; then
+  mkdir -p "result/$plist_item"
+  chmod a+w "result/$plist_item"
 fi;
 
 echo -e "\033[37;1;41m mp4box \033[0m"
-MP4Box -add video/video.mp4 -add audio/audio.mp4 result/$2/$3-mp4box-$2.mp4
+MP4Box -add video/video.mp4 -add audio/audio.mp4 result/$plist_item/$3-mp4box-$2.mp4
 
 # echo -e "\033[37;1;41m ffmpeg \033[0m";
-# ffmpeg -i video/video.mp4 -i audio/audio.mp4 result/$2/$3-ffmpeg_$2.mp4;
+# ffmpeg -i video/video.mp4 -i audio/audio.mp4 result/$plist_item/$3-ffmpeg_$2.mp4;
 
 echo -e "\033[37;1;41m concatenation finished \033[0m"
