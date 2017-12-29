@@ -2,8 +2,7 @@
 node_modules
 scrapper/node_modules
 *.zip
-task.txt
-taskrunner2.sh
+*.txt
 video
 audio
 result

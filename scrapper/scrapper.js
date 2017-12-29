@@ -2,11 +2,17 @@ const osmosis = require('osmosis');
 const fs = require('fs');
 const regLink = /^https:\/\/[\w\d\.]*\/[\w\d\-]*/i;
 
-URL = process.argv[2];
+const URL = process.argv[2];
+const USERDATA = JSON.parse(fs.readFileSync('userdata.txt'));
 
 osmosis
     .get(URL)
-    .set({'content': '.js-react-on-rails-component'})   // альтернатива: `.find('title').set('Title')`
+    .follow('a[href="\/users\/sign_in"]@href')
+    .submit('#new_user', {
+      'user[email]': USERDATA.login,
+      'user[password]': USERDATA.password
+    })
+    .set({'content': '.js-react-on-rails-component'})
     .data(function(data){
 
       let data_parsed = JSON.parse(data.content);
@@ -28,3 +34,4 @@ osmosis
       fs.writeFileSync("task.txt", links);
 
     })
+    .log(console.log)   // включить логи
