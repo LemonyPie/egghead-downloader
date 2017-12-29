@@ -24,7 +24,7 @@ osmosis
         let lesson_url = lessons[k].media_urls.dash_url;
         links[k] = regLink.exec(lesson_url)[0];
       }
-      links = links.join('\n');
+      links = links.join('\n') + '\n';
       fs.writeFileSync("task.txt", links);
 
     })
