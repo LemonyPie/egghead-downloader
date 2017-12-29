@@ -26,10 +26,10 @@ if ! [ -d "result" ]; then
   chmod a+w "result";
 fi;
 
-# echo -e "\033[37;1;41m mp4box \033[0m"
-# MP4Box -add video/video.mp4 -add audio/audio.mp4 result/mp4box_$2.mp4
+echo -e "\033[37;1;41m mp4box \033[0m"
+MP4Box -add video/video.mp4 -add audio/audio.mp4 result/$3-mp4box-$2.mp4
 
-echo -e "\033[37;1;41m ffmpeg \033[0m";
-ffmpeg -i video/video.mp4 -i audio/audio.mp4 result/ffmpeg_$2.mp4;
+# echo -e "\033[37;1;41m ffmpeg \033[0m";
+# ffmpeg -i video/video.mp4 -i audio/audio.mp4 result/$3-ffmpeg_$2.mp4;
 
 echo -e "\033[37;1;41m concatenation finished \033[0m";
