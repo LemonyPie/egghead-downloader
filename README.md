@@ -24,3 +24,13 @@
   "password":"your_password"
 }
 ```
+
+## Плейлист
+
+Для скачивания нескольких курсов используется `plist.txt` в корне проекта
+
+```
+https://egghead.io/courses/start-learning-react
+https://egghead.io/courses/getting-started-with-redux
+https://egghead.io/courses/the-beginner-s-guide-to-reactjs
+```
