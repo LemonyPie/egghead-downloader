@@ -18,7 +18,9 @@
 
 Для авторизации на сайте требуется файл `userdata.txt` в корне проекта
 
-```{
+```
+{
   "login":"your@email.com",
   "password":"your_password"
-}```
+}
+```
