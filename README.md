@@ -13,3 +13,12 @@
 `sudo bash taskrunner.sh https://egghead.io/courses/the-beginner-s-guide-to-reactjs`
 
 Видео будут пронумерованы с 0
+
+## Авторизация
+
+Для авторизации на сайте требуется файл `userdata.txt` в корне проекта
+
+```{
+  "login":"your@email.com",
+  "password":"your_password"
+}```
