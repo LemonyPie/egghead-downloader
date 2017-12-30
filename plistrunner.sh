@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/bin/bash bash
+
 rm -rf "log.txt"
 
 while read TASK

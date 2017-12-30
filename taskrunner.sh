@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/bin/bash bash
+#!/usr/bin/env node
+
 START_TIME=$(date +%s)
 echo -e "\033[37;1;41m start time: $(date) \033[0m"
 

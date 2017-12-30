@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash bash
 
 echo -e '\033[37;1;41m starting download \033[0m'
 

@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/bin/bash bash
+
 echo -e "\033[37;1;41m concating video \033[0m"
 cd video/
 cat init.mp4 > video.mp4
