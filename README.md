@@ -1,34 +1,34 @@
 # egghead.io video downloader
 
-Эти скрипты позволяют скачивать потоковое видео с сайта egghead.io
+Эти скрипты позволяют скачивать потоковое видео с сайта [egghead.io](https://egghead.io/courses "курсы egghead.io")
 
 Возможно скачивать курсы и отдельные уроки размещенные в открытом доступе
 
 ## Использование
 
-Точка входа plistrunner.sh
+Точка входа `plistrunner.sh`
 
 Для запуска требуется создать файл с плейлистом со списком ссылок на курсы, все файлы подхватываются автоматически
 
 `sudo bash plistrunner.sh`
 
-Видео будут сохранены в папке `result/название-курса` и пронумерованы с 0
+Видео будут сохранены в директории `result/название-курса` и пронумерованы с 0
 
 ### Дополнительные установки
 
 Требуется установленный GPAC:
 
-- Ubuntu: `sudo apt-get install gpac`
+* Ubuntu: `sudo apt-get install gpac`
 
-- MacOS: `brew install gpac`
+* MacOS: `brew install gpac`
 
-Установить node.js. Выполнить `npm i` в папке `scrapper`
+Установить node.js. Выполнить `npm i` в директории `scrapper`
 
 Создать файлы авторизации и листа загрузок:
 
-- `touch userdata.txt && nano userdata.txt`
+* `touch userdata.txt && nano userdata.txt`
 
-- `touch plist.txt && nano plist.txt`
+* `touch plist.txt && nano plist.txt`
 
 #### Модули
 
