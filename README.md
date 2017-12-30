@@ -16,19 +16,24 @@
 
 ### Дополнительные установки
 
-Требуется установленный GPAC
-Ubuntu: `sudo apt-get install gpac`
-MacOS: `bre install gpac`
+Требуется установленный GPAC:
+
+- Ubuntu: `sudo apt-get install gpac`
+
+- MacOS: `brew install gpac`
 
 Установить node.js. Выполнить `npm i` в папке `scrapper`
 
+Создать файлы авторизации и листа загрузок:
+
+- `touch userdata.txt && nano userdata.txt`
+
+- `touch plist.txt && nano plist.txt`
+
+#### Модули
+
 В зависимости от версий модулей может потребоваться `npm rebuild libxmljs --update-binary`
 
-Создать файлы авторизации и листа загрузок
-
-`touch userdata.txt && nano userdata.txt`
-
-`touch plist.txt && nano plist.txt`
 
 ## Авторизация
 
