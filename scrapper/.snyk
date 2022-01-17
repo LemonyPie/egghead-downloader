@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.12.0
+version: v1.22.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -20,3 +20,21 @@ patch:
         patched: '2018-07-03T09:47:30.239Z'
     - osmosis > libxmljs-dom > libxmljs > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
         patched: '2018-07-03T09:47:30.239Z'
+    - request > hawk > hoek:
+        patched: '2022-01-17T14:36:16.419Z'
+    - request > hawk > boom > hoek:
+        patched: '2022-01-17T14:36:16.419Z'
+    - request > hawk > sntp > hoek:
+        patched: '2022-01-17T14:36:16.419Z'
+    - request > hawk > cryptiles > boom > hoek:
+        patched: '2022-01-17T14:36:16.419Z'
+  'npm:extend:20180424':
+    - request > extend:
+        patched: '2022-01-17T14:36:16.419Z'
+    - osmosis > libxmljs-dom > libxmljs > node-pre-gyp > request > extend:
+        patched: '2022-01-17T14:36:16.419Z'
+  'npm:stringstream:20180511':
+    - request > stringstream:
+        patched: '2022-01-17T14:36:16.419Z'
+    - osmosis > libxmljs-dom > libxmljs > node-pre-gyp > request > stringstream:
+        patched: '2022-01-17T14:36:16.419Z'
