@@ -5,7 +5,7 @@
   "main": "scrapper.js",
   "scripts": {
     "test": "node scrapper",
-    "snyk-protect": "snyk protect",
+    "snyk-protect": "snyk-protect",
     "prepare": "npm run snyk-protect"
   },
   "author": "",
@@ -13,8 +13,8 @@
   "dependencies": {
     "fs": "0.0.1-security",
     "osmosis": "^1.1.6",
-    "request": "^2.83.0",
-    "snyk": "^1.88.0"
+    "request": "^2.88.0",
+    "@snyk/protect": "latest"
   },
   "snyk": true
 }
